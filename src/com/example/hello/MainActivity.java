@@ -20,6 +20,8 @@
 package com.example.hello;
 
 import android.os.Bundle;
+import android.util.Log;
+
 import org.apache.cordova.*;
 
 public class MainActivity extends CordovaActivity
@@ -37,5 +39,7 @@ public class MainActivity extends CordovaActivity
 
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+
+        Log.d("TEST", "just to test auto build for buddybuild");
     }
 }
