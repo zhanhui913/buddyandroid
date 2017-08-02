@@ -17,7 +17,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="http://192.168.1.195:8888/todolistapp.html" />
+    <content src="http://192.168.1.222:8888/todolistapp.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
