@@ -195,6 +195,10 @@ android {
                 applicationId "com.zhanbuddybuild.qa"
                 resValue "string", "app_name", "HelloQa"
             }
+            feature2 {
+                applicationId "com.zhanbuddybuild.feature2"
+                resValue "string", "app_name", "HelloFeature2"
+            }
         }
     }
     /*
