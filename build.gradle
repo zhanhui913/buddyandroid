@@ -171,6 +171,7 @@ android {
         if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
+        multiDexEnabled true
     }
 
     lintOptions {
@@ -182,22 +183,17 @@ android {
 
     if (Boolean.valueOf(cdvBuildMultipleApks)) {
         productFlavors {
-            armv7 {
-                versionCode defaultConfig.versionCode*10 + 2
-                ndk {
-                    abiFilters "armeabi-v7a", ""
-                }
+            local {
+                applicationId "com.zhanbuddybuild.local"
+                resValue "string", "app_name", "HelloLocal"
             }
-            x86 {
-                versionCode defaultConfig.versionCode*10 + 4
-                ndk {
-                    abiFilters "x86", ""
-                }
+            feature {
+                applicationId "com.zhanbuddybuild.feature"
+                resValue "string", "app_name", "HelloFeature"
             }
-            all {
-                ndk {
-                    abiFilters "all", ""
-                }
+            qa {
+                applicationId "com.zhanbuddybuild.qa"
+                resValue "string", "app_name", "HelloQa"
             }
         }
     }
