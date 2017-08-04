@@ -40,6 +40,6 @@ public class MainActivity extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
         
-        Log.d("TEST", "App number 2");
+        Log.d("TEST", "App flavours");
     }
 }
