@@ -40,6 +40,6 @@ public class MainActivity extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
         
-        Log.d("TEST", "App flavours increased for submodule hooksssss”);
+        Log.d("TEST", "App flavours increased for submodule hooksssss");
     }
 }
