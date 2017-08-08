@@ -1,0 +1,13 @@
+GIT_DIR_="$(git rev-parse --git-dir)"
+
+BRANCH="$(git rev-parse --symbolic --abbrev-ref $(git symbolic-ref HEAD))"
+
+
+POST_PUSH="$GIT_DIR_/hooks/post-push"
+
+
+git pull --rebase origin $BRANCH
+git push origin $BRANCH
+
+test $? -eq 0 && test -x "$POST_PUSH" &&
+    exec "$POST_PUSH" "$BRANCH" "$@"
