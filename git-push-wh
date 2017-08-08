@@ -1,3 +1,4 @@
+#!/bin/bash
 GIT_DIR_="$(git rev-parse --git-dir)"
 
 BRANCH="$(git rev-parse --symbolic --abbrev-ref $(git symbolic-ref HEAD))"
