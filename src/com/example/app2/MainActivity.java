@@ -40,6 +40,6 @@ public class MainActivity extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
         
-        Log.d("TEST", "Trying out change 1 more time again again agin");
+        Log.d("TEST", "Trying out buddybuilds selective builds");
     }
 }
